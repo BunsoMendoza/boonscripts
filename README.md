@@ -1,1 +1,1 @@
-# a collection of littl scripts I have written to make my life more convenient
+# a collection of little scripts I have written to make my life more convenient
