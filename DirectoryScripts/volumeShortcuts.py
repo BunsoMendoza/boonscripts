@@ -6,6 +6,10 @@ interface = devices.Activate(
     IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 volume = cast(interface, POINTER(IAudioEndpointVolume))
 volume.GetMute()
-volume.GetMasterVolumeLevel()
-volume.GetVolumeRange()
-volume.SetMasterVolumeLevel(-20.0, None)
+print(volume.GetMasterVolumeLevel())
+
+##max volume
+##volume.SetMasterVolumeLevel(-0.1, None)
+
+##25%
+volume.SetMasterVolumeLevel(-21.0, None)
